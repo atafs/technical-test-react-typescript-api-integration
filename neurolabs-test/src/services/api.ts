@@ -1,7 +1,7 @@
 // src/services/api.ts
 
 const BASE_URL = "/v2"; // Using proxy in package.json: "proxy": "https://staging.api.neurolabs.ai/"
-const API_KEY = process.env.REACT_APP_API_KEY || "YOUR_API_KEY"; // Replace with actual API key or use .env
+const API_KEY = import.meta.env.REACT_APP_API_KEY || "YOUR_API_KEY"; // Replace with actual API key or use .env
 
 // Interfaces for API responses
 interface CatalogItem {
